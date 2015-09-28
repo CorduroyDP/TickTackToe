@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html><head>
+  <link href="bootstrap.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="TickTackToe.css">
+  <script src="jquery-2.1.4.js"></script>
+  <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <script src="TickTackToe.js"></script>
+</head>
+<body>
+  <h1>Noughts &amp; Crosses</h1>
+  <div id ="welcome">
+    <h2 id="greeting">'Ello Mates! What are your names?</h2>
+    <h2> Name of Player 1 </h2>
+      <input id="player1" class="form-control" type="text"  id="myTextBox" autofocus/>
+      <h2> Name of Player 2 </h2>
+      <input id="player2" class="form-control" type="text"  id="myTextBox" autofocus/>
+      <br>
+        <button type="submit" class="btn" id="submitBtn">Submit</button>
+  </div>
+  <div id="playerDisplay">
+    <div id=name1Info>
+    <h2 id="p1Id">Nought Player: </h2>
+  </div>
+  <div id="name2Info"><h2 id="p2Id">Cross Player: </h2>
+  </div>
+ </div>
+ </div>
+  <div class="container">
+        <div id="grid">
+      <table>
+        <tbody><tr>
+          <td class="box" id="f0"></td>
+          <td class="box" id="f1"></td>
+          <td class="box" id="f2"></td>
+        </tr>
+        <tr>
+          <td class="box" id="f3"></td>
+          <td class="box" id="f4"></td>
+          <td class="box" id="f5"></td>
+        </tr>
+        <tr>
+          <td class="box" id="f6"></td>
+          <td class="box" id="f7"></td>
+          <td class="box" id="f8"></td>
+        </tr>
+      </tbody></table>
+    </div>
+</div>
+</body>
+</html>

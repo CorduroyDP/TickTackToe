@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+  margin-bottom: 90px;
+  font-size: 100px;
+  color: blue;
+
+}
+body {
+  background-color: #99CCFF;
+  /*position: relative;*/
+
+}
+
+#grid {
+
+  margin: 2px 2px;
+
+
+}
+
+.box {
+  border: 5px solid black;
+  height: 350px;
+  width: 350px;
+  /*position: relative;*/
+  text-align: center;
+  background-color: white;
+
+}
+
+#name1Info{
+    float: left;
+    text-align: center;
+
+    padding-left:20px;
+
+
+}
+
+#name2Info{
+    float: right;
+    text-align: center;
+    
+    padding-right: 350px;
+
+}
+#playerDisplay{
+  display: none;
+
+}
+
+#welcome{
+  width: 20%;
+  float:left;
+  padding-left: 10px;
+}
+#greeting{
+  text-align: center;
+}
