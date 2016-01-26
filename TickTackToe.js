@@ -1,15 +1,3 @@
-//var askForPlayerNameAndShowIt = function(jerseyNumber) {
-  // ask
-  //var name = prompt("What's yo name, brah?");
-  // display
-  //$("#nameOfPlayer"+jerseyNumber).append(name);
-//}
-
-//
-// askForPlayerNameAndShowIt(1);
-// askForPlayerNameAndShowIt(2);
-
-
 $(document).ready(function(){
 
   //welcome screen to collect names
@@ -49,7 +37,7 @@ $(document).ready(function(){
         $(this).text(currentPlayer).unbind();
         $(this).animate({backgroundColor: markerColor}, 1000);
 
-
+//winning combos
     if (markerWins("#f0", "#f1", "#f2", currentPlayer) ||
         markerWins("#f3", "#f4", "#f5", currentPlayer) ||
         markerWins("#f6", "#f7", "#f8", currentPlayer) ||
@@ -59,17 +47,16 @@ $(document).ready(function(){
         markerWins("#f0", "#f4", "#f8", currentPlayer) ||
         markerWins("#f2", "#f4", "#f6", currentPlayer))
     {
-
-        setTimeout(function(){confirm(currentPlayer + " We'll tell you later who wins!!! Play again?"); window.location.reload();} , 1100);
+        setTimeout(function(){confirm("You win! Play again?"); window.location.reload();} , 1100);
     }
 
     clickCounter++
-    if  (clickCounter === 9)
+    if  (clickCounter === 10)
    {
        setTimeout(function(){confirm("Cat's Game! Play Again.");window.location.reload();},1000);
    }
 
-
+//player colors
    if (currentPlayer === ' ')
    {
          currentPlayer = '  ';
